@@ -1,0 +1,68 @@
+<!-- Ahmed Youssef -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>websites bookmarker</title>
+</head>
+
+<body>
+
+    <div class="container allHolder">
+        <div class="header opacity-75 d-flex justify-content-between align-items-center">
+            <h1>Websites Bookmarker</h1>
+
+            <input type="text" id="searchInput" name="search" placeholder="Search for Bookmarks" class="px-2">
+
+        </div>
+
+        <div class="addingHolder">
+            <h2 class="text-center">Bookmark your favorite sites</h2>
+            <div class="inputs">
+                <label for="websiteName">Website Name</label>
+                <input type="text" id="websiteNameInput" name="websiteName" placeholder="Name">
+
+                <label for="websiteURL">Website URL</label>
+                <input type="url" id="websiteURL" name="websiteURLInput" placeholder="URL">
+            </div>
+            <div class="addClearButtons d-flex justify-content-center">
+                <button class="btn btn-success mx-5" id="addWebsite" onclick="addOrUpdate()">Add</button>
+                <button class="btn btn-danger mx-5" id="clearInputs" onclick="clearInputs()">Clear</button>
+            </div>
+        </div>
+
+        <div class="websitesHolder mt-3">
+            <ul class="list-unstyled" id="websiteList">
+
+            </ul>
+        </div>
+
+        <div class="footer container opacity-50">
+            <h6 class="m-0">&copy; 2024 Ahmed Youssef</h6>
+            <div class="contactIcons">
+                <a href="https://www.linkedin.com/in/ahmed-youssef-37732b2b6/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:Ahmed.youssef.5522.52@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="whatsapp://send?phone=+201158973342">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
