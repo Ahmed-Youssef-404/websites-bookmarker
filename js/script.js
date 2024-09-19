@@ -14,6 +14,7 @@ let updateIndex = -1; // Index of the website being updated (default is -1, mean
 function addOrUpdate() {
     if (websiteName.value == '' || websiteURL.value == '') {
         alert("Please fill in both fields");
+        return;
     } else if (updateIndex === -1) {
         // Add mode
         websitesArray.push({ name: websiteName.value, url: websiteURL.value });
