@@ -106,5 +106,15 @@ function filterWebsites() {
 
 // -------------------------------------------------------------------------------------------------------
 
+document.addEventListener("keydown", function(event) {
+    // Check if the pressed key is 'Enter'
+    if (event.key === "Enter" || event.keyCode === 13) {
+        // Call the function you want to execute
+        addOrUpdate();
+    }
+});
+
+// -------------------------------------------------------------------------------------------------------
+
 // Display the websites when the page loads
 display();
